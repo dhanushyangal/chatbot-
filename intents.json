@@ -1,0 +1,122 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "How are you?",
+        "Good day",
+        "Greetings",
+        "What's up?",
+        "Hey"
+      ],
+      "responses": [
+        "Hello! How can I assist you?",
+        "Hi there! What can I do for you?",
+        "Hey! How can I help you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Catch you later",
+        "Talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you later! Take care!",
+        "Bye! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "I appreciate it",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Anytime! Happy to help.",
+        "My pleasure!"
+      ]
+      },
+      {
+        "tag": "analyze_evidence",
+        "patterns": [
+          "How do I analyze evidence?",
+          "What tools do I need to analyze evidence?",
+          "Can you help with analyzing evidence?",
+          "I need help with evidence analysis"
+        ],
+        "responses": [
+          "To analyze evidence, start with disk imaging using tools like FTK Imager or Autopsy. Always preserve the original evidence.",
+          "You can use disk imaging tools like FTK Imager, EnCase, or dd for analysis.",
+          "For memory analysis, you can use Volatility or Rekall."
+        ]
+      },
+      {
+        "tag": "recommend_tools",
+        "patterns": [
+          "Can you recommend some tools?",
+          "What forensic tools are available?",
+          "What tools should I use for forensic investigation?",
+          "What tool is best for disk imaging?"
+        ],
+        "responses": [
+          "For disk imaging, use FTK Imager, EnCase, or dd. For memory forensics, Volatility is a great option.",
+          "FTK Imager, Autopsy, EnCase, and The Sleuth Kit are widely used tools in digital forensics.",
+          "For network forensics, Wireshark and NetworkMiner are excellent choices."
+        ]
+      },
+      {
+        "tag": "generate_report",
+        "patterns": [
+          "How do I generate a report?",
+          "Can you help with report generation?",
+          "I need help with creating a forensic report",
+          "What format should I use for the forensic report?"
+        ],
+        "responses": [
+          "For forensic report generation, organize your findings and use tools like Autopsy or EnCase to structure the report.",
+          "Provide a summary of your analysis, tools used, findings, and recommendations in your forensic report.",
+          "Use a clear structure: Overview, Evidence Collection, Analysis, Findings, and Conclusion."
+        ]
+      },
+      {
+        "tag": "forensic_procedures",
+        "patterns": [
+          "What are the standard forensic procedures?",
+          "How do I preserve evidence?",
+          "What steps should I follow for disk imaging?",
+          "Can you guide me through forensic procedures?"
+        ],
+        "responses": [
+          "Ensure you use write blockers when dealing with disk imaging and always create a bit-for-bit copy of the evidence.",
+          "Follow these steps: Identify the evidence, acquire it using tools like FTK Imager, preserve the original data, analyze the copy, and document everything.",
+          "Use tools like dd or FTK Imager for disk imaging and make sure to validate the integrity with hash functions like MD5 or SHA-256."
+        ]
+      },
+      {
+        "tag": "incident_response",
+        "patterns": [
+          "What is the first step in incident response?",
+          "How do I respond to an incident?",
+          "Can you help with incident response?",
+          "What should I do during an incident?"
+        ],
+        "responses": [
+          "First, identify the incident and contain it. Then, collect evidence while preserving the scene, and perform analysis.",
+          "In incident response, ensure you contain the breach, isolate affected systems, and collect evidence while maintaining chain of custody.",
+          "The steps in incident response include Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned."
+        ]
+      }
+    ]
+  }
+  
